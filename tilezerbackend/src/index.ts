@@ -15,8 +15,8 @@ app.listen(PORT, () => {
     console.log("server runnig port  " + PORT)  
 })
 
+// ------------------------------ ROUTES
 
-// ---------------------------------------------
-app.use('api/diaries', diaries)
+app.use('/api/diaries', diaries)
 
 

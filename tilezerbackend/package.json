@@ -19,5 +19,11 @@
   },
   "dependencies": {
     "express": "4.18.2"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends" : [ "./node-modules/ts-standard/eslintrc.json" ]
   }
 }
