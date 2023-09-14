@@ -4,7 +4,8 @@ export type model = '' | '' | '' | '' | ''
 export interface DiaryEntry { 
     id: number,
     date: string,
-} const DiaryOREntry = '' | ''
+} 
+const DiaryOREntry = 'id' | 'date'
 
 // Herencia 
 interface SpecialDiaryEntry extends DiaryEntry {

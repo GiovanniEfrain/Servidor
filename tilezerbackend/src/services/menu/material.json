@@ -1,0 +1,44 @@
+[
+    { 
+        "id": "1",
+        "title": "Hojalata",
+        "feature": ["Resistente", "Duro", "Opaco", "Seguro", "Versatil", "Hermetico", "Reciclable"],
+        "description": "Producto laminado plano, constituido por acero, recubierto por una capa de estaño.",
+        "package": "Alimentos, conservas, jugos, higiene y limpieza"
+    },
+    { 
+        "id": "2",
+        "title": "Polietileno de Baja Densidad (PEBD)",
+        "feature": ["Flexible", "Blanco", "Suave", "Transparente", "Pigmentable", "Resistente", "Reciclable"],
+        "description": "Perteneciente al grupo de las poliolefinas",
+        "package": "Bolsas de gran variedad: de supermercado, productos de aseo personal"
+    },
+    { 
+        "id": "3",
+        "title": "Polietileno de Alta Densidad (PEAD)",
+        "feature": ["Ligero", "Duro", "Resistente", "Opaco", "Impermable", "Reciclaje"],
+        "description": "Polimero termoplástico para envases plásticos rígidos",
+        "package": "Tubos, cajas, baldes, macetas, contenedores de bausra, señales de trafico, productos de limpieza, bolsas de supermercado, botellas "
+    },
+    { 
+        "id": "4",
+        "title": "Aluminio",
+        "feature": ["Dúctil", "Facil de compactar", "Resistente a la corrosion de agua", "Larga vida a productos de anaquel", "Ligero", "Brilloso", "No afecta la calidad del producto"],
+        "description": "Es un metal no fettomagnético y es el tercer elemento más común encontrado en la corteza terrestre",
+        "package": "Latas, Motores, rines de auto, piezas industriales (perfiles de puertas y ventanas)"
+    },
+    { 
+        "id": "5",
+        "title": "Multilaminado: Cartón laminado",
+        "feature": ["Conservatorio", "Complejo de reciclar"],
+        "description": "Han sido los mas resistentes y ocupan varios materiales aplicados en capas o laminas. ",
+        "package": "Envase para refigeración"
+    },
+    { 
+        "id": "6",
+        "title": "Tereftalato de polietileno (PET)",
+        "feature": ["Ligero", "Resistente", "Transparente", "Seguro", "Abre y cierra facil"],
+        "description": "Es una resina termoplástica utilizada para fabricacion de textiles y botellas",
+        "package": "Fibras y monofilamentos textiles, flejes, resina reciclable para nuevas botellas, combustible alterno" 
+    }
+]

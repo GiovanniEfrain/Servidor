@@ -16,7 +16,7 @@ router.post('/', (_req, res) => {
         //    ...diaryEntry
          } = _req.body
     
-        const newDaiaryEntry = toNewDiaryEntry(_req.body)
+       // const newDaiaryEntry = toNewDiaryEntry(_req.body)
     
         const newDiaryEntry = diaryService.addEntry(
             // diaryEntry Attributes

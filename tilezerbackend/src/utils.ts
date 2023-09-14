@@ -1,7 +1,8 @@
 import { NewDiaryEntry } from './types'
 
 const parseComment = (commentFromRequest: any) : String => {
-    if(!isString(commentFromRequest)  //typeof commentFromRequest === 'string'
+    if(!isString(commentFromRequest)  
+    //typeof commentFromRequest === 'string'
     ){
         throw new Error('Incorrect or missing comment')
     }
