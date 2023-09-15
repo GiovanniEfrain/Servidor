@@ -1,4 +1,4 @@
-import { NewDiaryEntry } from './types'
+//import { NewDiaryEntry } from './services/types'
 
 const parseComment = (commentFromRequest: any) : String => {
     if(!isString(commentFromRequest)  
@@ -19,12 +19,12 @@ const isString = (string: string): boolean => { // ValuetoEvaluate instance type
     return typeof string === 'string'
     // if (typeof string === 'string' || string instanceof String ){ }
 }
-
+/*
 const toNewDiaryEntry = (object: any) : NewDiaryEntry => {
     const newEntry: NewDiaryEntry = { 
         comment: parseComment(object.comment)
     }
     return newEntry
-}
+}*/
 
-export default toNewDiaryEntry
+export default isDate //toNewDiaryEntry

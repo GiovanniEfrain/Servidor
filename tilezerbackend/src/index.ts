@@ -1,25 +1,28 @@
+import "dotenv/config"
 import express from 'express'
+import cors from 'cors'
 
-import diaries from './routes/diaries'
-import materials from './routes/menu/materials'
+import diariesRouter from './routes/diaries'
+import materialsRouter from './routes/materials'
 
-const app = express()
-app.use(express.json()) // Middleware
-const PORT = 3000
+const PORT = process.env.PORT || 3001; 
+
+const app = express();
+app.use(express.json()); // Middleware
+app.use(cors()); // 
 
 app.get('/ping', ( _req , res) => {
     console.log("ping !! Date: " + new Date().toLocaleDateString())
     res.send('pong')
-})
+});
 
 app.listen(PORT, () => {
     console.log("server runnig port  " + PORT)  
-})
+});
 
 // ------------------------------ ROUTES
 
-app.use('/api/diaries', diaries)
-
-app.use('/api/materials', materials)
+app.use('/api/diaries', diariesRouter)
+app.use('/api/materials', materialsRouter)
 
 

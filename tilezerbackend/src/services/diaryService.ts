@@ -1,4 +1,4 @@
-import { DiaryEntry, NonSensitiveInfoDiaryEntry } from '../types'
+import { DiaryEntry, NonSensitiveInfoDiaryEntry } from './types'
 import diaryData from './diaries.json'
 
 // ----------- Array -------------

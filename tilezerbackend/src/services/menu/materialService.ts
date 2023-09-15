@@ -1,4 +1,4 @@
-import { NonSensitiveInfoDiaryEntry } from '../../types'
+import { NonSensitiveInfoDiaryEntry } from '../types'
 import materialData from './material.json'
 import { MaterialEntry } from './types.m'
 
