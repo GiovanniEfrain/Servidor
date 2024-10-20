@@ -3,8 +3,8 @@ import { readdirSync } from 'fs'
 
 const PATH_ROUTER = `${__dirname}`;
 
-// Router Dinamico en base  al nombre del archivo
- 
+// Router Dinamico en base  al nombre del archivo 
+
 const router = Router();
 
 const cleanFileName = (fileName: string) => {

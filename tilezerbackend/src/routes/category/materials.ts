@@ -1,6 +1,6 @@
 import express from 'express'
 
-import * as materialService from '../services/menu/materialService'
+import * as materialService from '../../services/menu/materialService'
 
 const router = express.Router()
 

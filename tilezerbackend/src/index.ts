@@ -1,15 +1,26 @@
 import "dotenv/config"
 import express from 'express'
 import cors from 'cors'
+import db from "./config/mongo"
 
-import diariesRouter from './routes/diaries'
-import materialsRouter from './routes/materials'
+import routes from "./routes"
+
+// Declaracion de variables 
 
 const PORT = process.env.PORT || 3001; 
 
-const app = express();
+const app = express(); // Express 
 app.use(express.json()); // Middleware
-app.use(cors()); // 
+app.use(cors()); // Cors
+
+// ----------------------------- Remote DB
+// MongoDB 
+
+db(
+
+).then( () => console.log('Conexion Ready') );
+
+// ----------------------------- Test API Ping
 
 app.get('/ping', ( _req , res) => {
     console.log("ping !! Date: " + new Date().toLocaleDateString())
@@ -20,9 +31,8 @@ app.listen(PORT, () => {
     console.log("server runnig port  " + PORT)  
 });
 
-// ------------------------------ ROUTES
+// ------------------------------ Routes
+app.use('/', routes)
 
-app.use('/api/diaries', diariesRouter)
-app.use('/api/materials', materialsRouter)
-
-
+// app.use('/api/diaries', diariesRouter)
+// app.use('/api/materials', materialsRouter)
