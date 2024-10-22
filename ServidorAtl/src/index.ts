@@ -13,6 +13,10 @@ app.get('/', (req: Request, res: Response) => {
     res.send('API RUNNIG...');
 });
 
+app.get('/casa', (req: Request, res: Response) => {
+    res.send('API CASA...');
+});
+
 app.listen(port, () => { 
     console.log(
        `Server running at http://localhost:${port}/`
